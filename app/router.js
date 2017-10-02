@@ -13,6 +13,9 @@ Router.map(function() {
   this.route('food');
   this.route('coffee');
   this.route('breakfast');
+  this.route('nightlife');
+  this.route('shopping');
+  this.route('fun');
 });
 
 export default Router;
