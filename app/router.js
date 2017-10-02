@@ -10,6 +10,9 @@ Router.map(function() {
   this.route('about');
   this.route('top-picks');
   this.route('trending');
+  this.route('food');
+  this.route('coffee');
+  this.route('breakfast');
 });
 
 export default Router;
