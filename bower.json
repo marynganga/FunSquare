@@ -1,0 +1,21 @@
+{
+  "name": "funsquare",
+  "description": "Small description for funsquare goes here",
+  "main": "",
+  "authors": [
+    "marynganga <marynganga.mw@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
