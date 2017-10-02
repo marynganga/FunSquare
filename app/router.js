@@ -8,6 +8,8 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('about');
+  this.route('top-picks');
+  this.route('trending');
 });
 
 export default Router;
