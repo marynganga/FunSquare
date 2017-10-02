@@ -1,5 +1,18 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<div class="container-fluid">
+	<header class="jumbotron">
+		<h3>FunSquare</h3>
+		<nav class="well">
+			<ul>
+				{{#link-to 'index'}}<li>Home</li>{{/link-to}}
+				{{#link-to 'about'}}<li>About</li>{{/link-to}}
+			</ul>
+		</nav>
+	</header>
+
 
 {{outlet}}
+
+	<footer class="well">
+		<p> &copy;2017 Funsquare Limited</p>
+	</footer>
+</div>
