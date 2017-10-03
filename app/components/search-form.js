@@ -12,6 +12,7 @@ export default Ember.Component.extend({
                 selectedOption: this.get('selectedOption')
             };
             this.set('location','');
+            this.sendAction('submitDetails',params);
             console.log(params)
         }
     }
