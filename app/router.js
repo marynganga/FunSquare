@@ -17,6 +17,7 @@ Router.map(function() {
   this.route('shopping');
   this.route('fun');
   this.route('view-venue');
+  this.route('events');
 });
 
 export default Router;
