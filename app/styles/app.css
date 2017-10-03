@@ -6,6 +6,7 @@
   margin-left: 4%;
   margin-bottom: 5%;
   margin-right: 4%;
+  border-radius: 10px;
   box-shadow: 1em 1em 1em 1em #ddd;
   /*background-color: #EBEDEF;*/
 }
@@ -28,6 +29,7 @@
   float: left;
   margin-left: 5%;
   margin-bottom: 2%;
+  /*width: 100%;*/
 }
 
 .restaurantName {
@@ -36,24 +38,124 @@
 
 .restaurantDescription {
   margin-bottom: 10%;
-  width: 100%;
   /*padding: 10px;*/
 }
 
 button {
   padding: 5px 15px;
   border-radius: 10px;
+  font-size: 18px;
+  background-color: #ddd;
+  padding-top: 5px;
 }
+
+button .actionSave {}
 
 .label {
   color: white;
-  padding: 8px;
+  padding: 5px;
   font-family: Arial;
   background-color: teal;
   border-radius: 10px;
-  padding: 22px 10px;
-  /*margin-left: -80%;*/
+  padding: 25px 5px;
+  /*margin-right: 3%;
+  margin-top: 5%;
+  float: right;*/
+}
+
+.venueScore {
+  margin-right: 3%;
   float: right;
 }
 
-.venueScore {}
+.venueCost {
+  margin-right: 35%;
+  margin-top: 1%;
+  float: right;
+  padding: 10px 10px;
+}
+
+.venueReview {
+  float: left;
+}
+
+.venueInfoSection {
+  margin-bottom: 2%;
+}
+
+.venueInfoSection .flex-container {
+  display: -webkit-flex;
+  display: flex;
+  width: 99%;
+  height: 70%;
+  margin-left: 0.5%;
+  margin-bottom: 5%;
+  margin-right: -5%;
+  border-radius: 10px;
+  flex-direction: column-reverse;
+  box-shadow: 1em 1em 1em 1em #ddd;
+  /*background-color: #EBEDEF;*/
+}
+
+.venueInfoSection .flex-item {
+  /*background-color: cornflowerblue;*/
+  width: 100%;
+  padding: 10px;
+  height: 70%;
+  margin-left: 3.5%;
+}
+
+
+/*.venueInfo {
+  border-style: outset;
+  width: 95%;
+  border-top: 1px;
+}*/
+
+.venueActionSection {
+  display: inline-block;
+  width: 100%;
+  border-style: outset #ddd;
+  background-color: #ECF0F1;
+  padding: 15px;
+  margin-right: -5%;
+  margin-left: -3.5%;
+  margin-bottom: /*margin-left-: -2%;*/
+}
+
+.tipsbtn {
+  float: left;
+  background-color: teal;
+  color: white;
+}
+
+.newReviewBtn {
+  float: none;
+  margin-left: 5%;
+  background-color: teal;
+  color: white;
+}
+
+.venueRateSection {
+  border-radius: 0 0 3px 0;
+  background-color: #fff;
+  border-left: 0px solid #efeff4;
+  float: right;
+  height: 40px;
+  padding: 25px;
+  width: 278px;
+}
+
+.newReviewForm {
+  display: inline-block;
+  width: 100%;
+  border-style: outset #ddd;
+  background-color: #ECF0F1;
+  padding: 15px;
+  margin-right: 5%;
+  margin-left: -3.5%;
+}
+
+.likeVenue {
+  margin-right: 5%;
+}
