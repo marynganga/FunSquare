@@ -35,6 +35,25 @@
 }
 
 .restaurantDescription {
-  margin-bottom: 5%;
+  margin-bottom: 10%;
+  width: 100%;
   /*padding: 10px;*/
 }
+
+button {
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+.label {
+  color: white;
+  padding: 8px;
+  font-family: Arial;
+  background-color: teal;
+  border-radius: 10px;
+  padding: 22px 10px;
+  /*margin-left: -80%;*/
+  float: right;
+}
+
+.venueScore {}
