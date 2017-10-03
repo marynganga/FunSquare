@@ -79,6 +79,10 @@ button .actionSave {}
   float: left;
 }
 
+.venueInfoSection {
+  margin-bottom: 2%;
+}
+
 .venueInfoSection .flex-container {
   display: -webkit-flex;
   display: flex;
@@ -88,6 +92,7 @@ button .actionSave {}
   margin-bottom: 5%;
   margin-right: -5%;
   border-radius: 10px;
+  flex-direction: column-reverse;
   box-shadow: 1em 1em 1em 1em #ddd;
   /*background-color: #EBEDEF;*/
 }
@@ -98,4 +103,59 @@ button .actionSave {}
   padding: 10px;
   height: 70%;
   margin-left: 3.5%;
+}
+
+
+/*.venueInfo {
+  border-style: outset;
+  width: 95%;
+  border-top: 1px;
+}*/
+
+.venueActionSection {
+  display: inline-block;
+  width: 100%;
+  border-style: outset #ddd;
+  background-color: #ECF0F1;
+  padding: 15px;
+  margin-right: -5%;
+  margin-left: -3.5%;
+  margin-bottom: /*margin-left-: -2%;*/
+}
+
+.tipsbtn {
+  float: left;
+  background-color: teal;
+  color: white;
+}
+
+.newReviewBtn {
+  float: none;
+  margin-left: 5%;
+  background-color: teal;
+  color: white;
+}
+
+.venueRateSection {
+  border-radius: 0 0 3px 0;
+  background-color: #fff;
+  border-left: 0px solid #efeff4;
+  float: right;
+  height: 40px;
+  padding: 25px;
+  width: 278px;
+}
+
+.newReviewForm {
+  display: inline-block;
+  width: 100%;
+  border-style: outset #ddd;
+  background-color: #ECF0F1;
+  padding: 15px;
+  margin-right: 5%;
+  margin-left: -3.5%;
+}
+
+.likeVenue {
+  margin-right: 5%;
 }
