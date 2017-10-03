@@ -44,7 +44,12 @@
 button {
   padding: 5px 15px;
   border-radius: 10px;
+  font-size: 18px;
+  background-color: #ddd;
+  padding-top: 5px;
 }
+
+button .actionSave {}
 
 .label {
   color: white;
@@ -53,11 +58,44 @@ button {
   background-color: teal;
   border-radius: 10px;
   padding: 25px 5px;
+  /*margin-right: 3%;
+  margin-top: 5%;
+  float: right;*/
+}
+
+.venueScore {
   margin-right: 3%;
-  /*margin-top: 5%;*/
   float: right;
+}
+
+.venueCost {
+  margin-right: 35%;
+  margin-top: 1%;
+  float: right;
+  padding: 10px 10px;
 }
 
 .venueReview {
   float: left;
+}
+
+.venueInfoSection .flex-container {
+  display: -webkit-flex;
+  display: flex;
+  width: 99%;
+  height: 70%;
+  margin-left: 0.5%;
+  margin-bottom: 5%;
+  margin-right: -5%;
+  border-radius: 10px;
+  box-shadow: 1em 1em 1em 1em #ddd;
+  /*background-color: #EBEDEF;*/
+}
+
+.venueInfoSection .flex-item {
+  /*background-color: cornflowerblue;*/
+  width: 100%;
+  padding: 10px;
+  height: 70%;
+  margin-left: 3.5%;
 }
