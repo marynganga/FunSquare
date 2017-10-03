@@ -1,0 +1,59 @@
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  width: 92%;
+  height: 100%;
+  margin-left: 4%;
+  margin-bottom: 5%;
+  margin-right: 4%;
+  box-shadow: 1em 1em 1em 1em #ddd;
+  /*background-color: #EBEDEF;*/
+}
+
+.flex-item {
+  /*background-color: cornflowerblue;*/
+  width: 100%;
+  padding: 10px;
+  height: 100%;
+  margin-left: 5%;
+}
+
+.img-rounded {
+  width=304px;
+  height=236px;
+  float: left;
+}
+
+.restaurantDetails {
+  float: left;
+  margin-left: 5%;
+  margin-bottom: 2%;
+}
+
+.restaurantName {
+  margin-bottom: 10%;
+}
+
+.restaurantDescription {
+  margin-bottom: 10%;
+  width: 100%;
+  /*padding: 10px;*/
+}
+
+button {
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+.label {
+  color: white;
+  padding: 8px;
+  font-family: Arial;
+  background-color: teal;
+  border-radius: 10px;
+  padding: 22px 10px;
+  /*margin-left: -80%;*/
+  float: right;
+}
+
+.venueScore {}
