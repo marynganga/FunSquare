@@ -8,15 +8,30 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('about');
+
   this.route('top-picks');
+
   this.route('trending');
-  this.route('food',{path:'food/:params.location'});
+
+  this.route('food', {
+    path: 'food/:params.location'
+  });
+
   this.route('coffee');
+
   this.route('breakfast');
-  this.route('nightlife');
+
+
+  this.route('nightlife', {
+    path: 'nightlife/:params.location'
+  });
+
   this.route('shopping');
+
   this.route('fun');
+
   this.route('view-venue');
+
   this.route('events');
 });
 
