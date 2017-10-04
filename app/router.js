@@ -10,7 +10,7 @@ Router.map(function() {
   this.route('about');
   this.route('top-picks');
   this.route('trending');
-  this.route('food');
+  this.route('food',{path:'food/:params.location'});
   this.route('coffee');
   this.route('breakfast');
   this.route('nightlife');
