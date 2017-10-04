@@ -32,7 +32,9 @@ Router.map(function() {
 
   this.route('view-venue');
 
-  this.route('events');
+  this.route('events', {
+    path: 'events/:params.location'
+  });
 });
 
 export default Router;
