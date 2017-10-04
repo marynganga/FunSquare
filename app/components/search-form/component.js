@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-    selectedOption:null,
+	selectedOption:null,
     actions:{
         setSelection: function(selected){
             this.set('selectedOption',selected)
@@ -13,7 +13,6 @@ export default Ember.Component.extend({
             };
             this.set('location','');
             this.sendAction('submitDetails',params);
-            console.log(params)
         }
     }
 });
