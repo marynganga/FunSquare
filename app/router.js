@@ -28,7 +28,9 @@ Router.map(function() {
 
   this.route('shopping');
 
-  this.route('fun');
+  this.route('fun', {
+    path: 'fun/:params.location'
+  });
 
   this.route('view-venue');
 
