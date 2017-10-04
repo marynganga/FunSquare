@@ -8,7 +8,8 @@ export default Ember.Route.extend({
       var CLIENT_ID = config.myCLIENT_ID;
       var CLIENT_SECRET = config.myCLIENT_SECRET;
       var location= Object.values(params);
-      var url = 'https://api.foursquare.com/v2/venues/search?near='+location+'&client_id='+CLIENT_ID+'&client_secret='+CLIENT_SECRET+'&v=20171003';
+      var url = 'https://api.foursquare.com/v2/venues/search?near='+location+'&limit=25&client_id='+CLIENT_ID+'&client_secret='+CLIENT_SECRET+'&v=20171003';
+   console.log(url);
     return Ember.$.getJSON(url).then(function(responseJSON) {
 
       return responseJSON.response.venues;
