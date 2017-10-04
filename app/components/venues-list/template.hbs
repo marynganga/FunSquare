@@ -8,7 +8,8 @@
           <span class="label venueScore">{{result.venue.rating}}</span>
           <span class="label venueCost">{{result.venue.price.tier}}</span>
           <div class="restaurantDetails">
-            <h4 class="restaurantName">{{result.venue.name}}</h4>
+            {{#link-to 'view-venue' result.venue.id}}<h4 {{action 'sendId' result.venue.id}} class="restaurantName">{{result.venue.name}}</h4>{{/link-to}}
+            
             <h4 class="restaurantDescription">{{result.venue.description}}</h4>
           </div>
         </div>
