@@ -1,10 +1,9 @@
-{{venue-search-form submitDetails='submitDetails'}}
+
 <ul>
   {{#each model as |result|}}
     <div class="flex-container">
       <div class="flex-item">
         <div class="venueInfo">
-
           <img src="https://lh3.googleusercontent.com/-LvroGvBAXVA/WWPkQxrzvCI/AAAAAAABhv0/vpiQYmET1c8G9Loh9MFMid19kPUEFHF4gCLIBGAYYCw/w180-h180-n-k-no/" class="img-rounded" alt="Pete's Cafe and Burrito Haven">
           <span class="label venueScore">{{result.venue.rating}}</span>
           <span class="label venueCost">{{result.venue.price.tier}}</span>

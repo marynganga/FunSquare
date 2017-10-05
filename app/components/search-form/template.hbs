@@ -1,27 +1,25 @@
 <div class="container-fluid">
-  <h2><strong>FunSquare</strong></h2>
-  <h5>Explore all the places new memories await!</h5>
-
-  <form>
-    <select required id="categories" name="categories" class="btn btn-primary" onchange={{action 'setSelection' value="target.value"}}>
-      <option value=none>Categories</option>          
-      <option value=top-picks>Recommended:Highest Rating</option>
-      <option value=food>Food</option>
-      <option value=nightlife>Nightlife</option>          
-      <option value=events>Events</option>
-      <option value=arts>Arts and Entertainment</option>
-      <option value=outdoors>Outdoors and Recreation</option>
-    </select>
-        
-    <div class="form-group">
-      {{input required id="location" value=location class="form-control" type="text" placeholder="Choose a Location"}}
+  <div class="header">
+    <!-- <h1 class="funTag"><strong>FunSquare</strong></h1> -->
+    <h3>Explore all the Places, New Memories Await!</h3>
+  </div>
+  <div class="searchVenue">
+    <div class="venueOptions">
+      <select required id="categories" name="categories" class="btn btn-primary" onchange={{action 'setSelection' value="target.value"}}>
+        <option value=none>I'm Looking For....</option>
+        <option value=top-picks>Recommended:Highest Rating</option>
+        <option value=food>Food</option>
+        <option value=nightlife>Nightlife</option>
+        <option value=events>Events</option>
+        <option value=arts>Arts and Entertainment</option>
+        <option value=outdoors>Outdoors and Recreation</option>
+      </select>
     </div>
-    <div class="form-group">  
+    <div class="form-group" id="locationInput">
+      {{input required id="location" value=location class="myLocation" type="text" placeholder="Choose a location"}}
+    </div>
+    <div class="form-group" id="searchVenue">
       <button type="button" id="search" class="btn btn-primary" {{action 'submit'}}>Search</button>
     </div>
-  </form>
+  </div>
 </div>
-
-
-
-

@@ -1,245 +1,298 @@
+  body {
+    color: #4e595d;
+    background-color: #eee;
+  }
 
-body {
-  color: #4e595d;
-  background-color: #eee;
-}
-.indexPage {
-  background-image: url("../FunSquare/fun2.jpg");
-  background-color: #9999e6;
-  font-style: italic;
-  color: #660033;
-  text-align: center;
-  padding: 190px;
-  margin: 0px;
-  width: 100%;
-  height: 100%;
-}
+  .indexPage {
+    background-image: url("../FunSquare/fun2.jpg");
+    background-color: #9999e6;
+    font-style: italic;
+    /*color: #660033;*/
+    text-align: center;
+    padding: 190px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+  }
 
-.flex-container {
-  display: -webkit-flex;
-  display: flex;
-  width: 92%;
-  height: 100%;
-  margin-left: 4%;
-  margin-bottom: 5%;
-  margin-right: 4%;
-  border-radius: 10px;
-  box-shadow: 1em 1em 1em 1em #ddd;
-  background-color: #F9FCFC;
-  /*background-color: #EBEDEF;*/
-}
+  .header {
+    margin-left: 42%;
+    margin-top: 12%;
+  }
 
-.flex-item {
-  /*background-color: cornflowerblue;*/
-  width: 100%;
-  padding: 10px;
-  height: 100%;
-  margin-left: 5%;
-}
+  h2 .funTag {
+    font-weight: bold;
+    line-height: 140%;
+    margin: 0 0 10px;
+    font-size: 15px;
+    color: #black;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+    /*margin: 0 auto 10px;*/
+    width: 560px;
+  }
 
-.img-rounded {
-  width=304px;
-  height=236px;
-  float: left;
-}
+  .searchVenue {
+    margin-top: 2%;
+    margin-left: 15%;
+  }
 
-.restaurantDetails {
-  float: left;
-  margin-left: 5%;
-  margin-bottom: 2%;
-  /*width: 100%;*/
-}
+  .venueOptions {
+    float: left;
+    /*margin-left: 25%;*/
+  }
 
-.restaurantName {
-  margin-bottom: 10%;
-}
+  select {
+    width: 350px;
+    height: 50px;
+    color: #A9CCE3;
+    text-align: center;
+    font-size: 15px;
+  }
 
-.restaurantDescription {
-  margin-bottom: 10%;
-  /*padding: 10px;*/
-}
+  .myLocation {
+    width: 320px;
+    height: 50px;
+    border-radius: 2px;
+    text-align: left;
+    /*margin-left: 0.5%;*/
+  }
 
-button {
-  padding: 5px 15px;
-  border-radius: 10px;
-  font-size: 18px;
-  background-color: #ddd;
-  padding-top: 5px;
-}
+  #locationInput {
+    float: left;
+    margin-left: 1%;
+  }
 
-button .actionSave {}
+  #searchVenue {
+    float: left;
+    margin-left: 1.5%;
+  }
 
-.label {
-  color: white;
-  padding: 5px;
-  font-family: Arial;
-  background-color: teal;
-  border-radius: 10px;
-  padding: 25px 5px;
-  /*margin-right: 3%;
+  #searchVenue button {
+    width: 160px;
+    height: 50px;
+    text-align: center;
+  }
+
+  .searchSection {
+    margin-top: 2%;
+    margin-left: 12.5%;
+  }
+
+  .flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 92%;
+    height: 100%;
+    margin-left: 4%;
+    margin-bottom: 5%;
+    margin-right: 4%;
+    border-radius: 10px;
+    box-shadow: 1em 1em 1em 1em #ddd;
+    background-color: #F9FCFC;
+    /*background-color: #EBEDEF;*/
+  }
+
+  .flex-item {
+    /*background-color: cornflowerblue;*/
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    margin-left: 5%;
+  }
+
+  .img-rounded {
+    width=304px;
+    height=236px;
+    float: left;
+  }
+
+  .restaurantDetails {
+    float: left;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    /*width: 100%;*/
+  }
+
+  .restaurantName {
+    margin-bottom: 10%;
+  }
+
+  .restaurantDescription {
+    margin-bottom: 10%;
+    /*padding: 10px;*/
+  }
+
+  button {
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #ddd;
+    padding-top: 5px;
+  }
+
+  button .actionSave {}
+
+  .label {
+    color: white;
+    padding: 5px;
+    font-family: Arial;
+    background-color: teal;
+    border-radius: 10px;
+    padding: 25px 5px;
+    /*margin-right: 3%;
   margin-top: 5%;
   float: right;*/
-}
+  }
 
-.venueScore {
-  margin-right: 3%;
-  float: right;
-}
+  .venueScore {
+    margin-right: 3%;
+    float: right;
+  }
+  /* Dropdown Button*/
 
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  /* The container <div> - needed to position the dropdown content */
 
-/* Dropdown Button*/
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  /* Dropdown Content (Hidden by Default) */
 
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
+  .venueActionSection {
+    display: inline-block;
+    width: 100%;
+    border-style: outset #ddd;
+    background-color: #eee;
+    padding: 15px;
+    margin-right: -5%;
+    margin-left: -3.5%;
+    margin-bottom: /*margin-left-: -2%;*/
+  }
 
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  /* Links inside the dropdown */
 
-/* The container <div> - needed to position the dropdown content */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+  .venueRateSection {
+    border-radius: 0 0 3px 0;
+    background-color: #fff;
+    border-left: 0px solid #efeff4;
+    float: right;
+    height: 40px;
+    padding-bottom: 20px;
+    /*padding: 30px;*/
+    width: 278px;
+  }
 
+  .venueActionSection .venueUpvote {
+    margin-left: 2%;
+    margin-right: 3%;
+    cursor: pointer;
+    color: teal;
+    border-radius: 1px;
+  }
 
-/* Dropdown Content (Hidden by Default) */
+  .newReviewForm {
+    display: inline-block;
+    width: 100%;
+    border-style: outset #ddd;
+    background-color: #ECF0F1;
+    padding: 15px;
+    margin-right: 5%;
+    margin-left: -3.5%;
+  }
+  /* Change color of dropdown links on hover */
 
-.venueActionSection {
-  display: inline-block;
-  width: 100%;
-  border-style: outset #ddd;
-  background-color: #eee;
-  padding: 15px;
-  margin-right: -5%;
-  margin-left: -3.5%;
-  margin-bottom: /*margin-left-: -2%;*/
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
+  .dropdown-content a:hover {
+    background-color: #f1f1f1
+  }
+  /* Show the dropdown menu on hover */
 
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /* Change the background color of the dropdown button when the dropdown content is shown */
 
-/* Links inside the dropdown */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-.venueRateSection {
-  border-radius: 0 0 3px 0;
-  background-color: #fff;
-  border-left: 0px solid #efeff4;
-  float: right;
-  height: 40px;
-  padding-bottom: 20px;
-  /*padding: 30px;*/
-  width: 278px;
-}
+  .venueReviews {
+    display: inline-block;
+    width: 100%;
+    border-style: outset #ddd;
+    background-color: #eee;
+    padding: 5px;
+    margin-right: -5%;
+    margin-left: -3.5%;
+    color: white;
+  }
 
-.venueActionSection .venueUpvote {
-  margin-left: 2%;
-  margin-right: 3%;
-  cursor: pointer;
-  color: teal;
-  border-radius: 1px;
-}
+  .reviewSection {
+    display: inline-block;
+    width: 100%;
+    border-style: outset #ddd;
+    border-radius: 5px;
+    border: 1px solid #F2F3F4;
+    padding: 10px;
+    margin-right: -5%;
+    margin-left: -3.5%;
+  }
 
-.newReviewForm {
-  display: inline-block;
-  width: 100%;
-  border-style: outset #ddd;
-  background-color: #ECF0F1;
-  padding: 15px;
-  margin-right: 5%;
-  margin-left: -3.5%;
-}
+  .reviewDetails {
+    width: 100%;
+    float: none;
+  }
 
+  .imageAuthor {
+    margin-right: 2%;
+    float: left;
+  }
 
-/* Change color of dropdown links on hover */
+  .author {
+    float: none;
+  }
 
-.dropdown-content a:hover {
-  background-color: #f1f1f1
-}
+  .reviewDate {
+    float: right;
+    margin-right: 5%;
+    margin-top: -3.5%;
+  }
 
+  .reviewActionSection {
+    margin-top: 3%;
+  }
 
-/* Show the dropdown menu on hover */
+  .reviewupvote {
+    margin-right: 3%;
+    cursor: pointer;
+    color: teal;
+  }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
-
-.venueReviews {
-  display: inline-block;
-  width: 100%;
-  border-style: outset #ddd;
-  background-color: #eee;
-  padding: 5px;
-  margin-right: -5%;
-  margin-left: -3.5%;
-  color: white;
-}
-
-.reviewSection {
-  display: inline-block;
-  width: 100%;
-  border-style: outset #ddd;
-  border-radius: 5px;
-  border: 1px solid #F2F3F4;
-  padding: 10px;
-  margin-right: -5%;
-  margin-left: -3.5%;
-}
-
-.reviewDetails {
-  width: 100%;
-  float: none;
-}
-
-.imageAuthor {
-  margin-right: 2%;
-  float: left;
-}
-
-.author {
-  float: none;
-}
-
-.reviewDate {
-  float: right;
-  margin-right: 5%;
-  margin-top: -3.5%;
-}
-
-.reviewActionSection {
-  margin-top: 3%;
-}
-
-.reviewupvote {
-  margin-right: 3%;
-  cursor: pointer;
-  color: teal;
-}
-
-.reviewDownvote {
-  cursor: pointer;
-  color: #C0392B;
-}
+  .reviewDownvote {
+    cursor: pointer;
+    color: #C0392B;
+  }

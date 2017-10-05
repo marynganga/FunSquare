@@ -14,4 +14,9 @@ export default Ember.Route.extend({
       return responseJSON.response.groups[0].items;
     });
   },
+  actions: {
+    submitDetails(params) {
+      this.transitionTo(params.selectedOption, params.location);
+    }
+  }
 });
