@@ -3,6 +3,7 @@ import config from '../config/environment';
 
 
 export default Ember.Route.extend({
+<<<<<<< HEAD
 	model: function(params) {
       var CLIENT_ID = config.myCLIENT_ID;
       var CLIENT_SECRET = config.myCLIENT_SECRET;
@@ -21,5 +22,9 @@ export default Ember.Route.extend({
 
     });
   },
-
+  actions: {
+    submitDetails(params) {
+      this.transitionTo(params.selectedOption, params.location);
+    }
+  }
 });
