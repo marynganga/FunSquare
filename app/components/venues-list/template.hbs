@@ -3,15 +3,20 @@
     <div class="flex-container">
       <div class="flex-item">
         <div class="venueInfo">
+
           <img src="https://lh3.googleusercontent.com/-LvroGvBAXVA/WWPkQxrzvCI/AAAAAAABhv0/vpiQYmET1c8G9Loh9MFMid19kPUEFHF4gCLIBGAYYCw/w180-h180-n-k-no/" class="img-rounded" alt="Pete's Cafe and Burrito Haven">
           <span class="label venueScore">{{result.venue.rating}}</span>
           <span class="label venueCost">{{result.venue.price.tier}}</span>
           <div class="restaurantDetails">
-            <h4 class="restaurantName">{{result.venue.name}}</h4>
+            {{#link-to 'view-venue' result.venue.id}}<h4 {{action 'sendId' result.venue.id}} class="restaurantName">{{result.venue.name}}</h4>{{/link-to}}
+            
             <h4 class="restaurantDescription">{{result.venue.description}}</h4>
+<<<<<<< HEAD
             <p>{{result.venue.url}}</p>
             <!-- <a class="button"><i class="fa fa-bookmark-o fa-2x" aria-hidden="true">Save</i></a> -->
             <button class="actionSave" type="button" name="button"><i class="fa fa-bookmark-o fa-2x fa-fw"  aria-hidden="true"></i>Save</button>
+=======
+>>>>>>> cf7f1c2061000b6fd926067a29071cede6b3ca54
           </div>
         </div>
       </div>
