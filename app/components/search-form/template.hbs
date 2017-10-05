@@ -1,35 +1,27 @@
-<div class="jumbotron">
-  <h4><strong>FunSquare</strong><br>Explore all the places new memories await!</h4>
+<div class="container-fluid">
+  <h2><strong>FunSquare</strong></h2>
+  <h5>Explore all the places new memories await!</h5>
 
   <form>
-        <select required id="categories" name="categories" class="btn btn-primary" onchange={{action 'setSelection' value="target.value"}}>
-          <option value=none>Categories</option>          
-          <option value=top-picks>Highest Rating</option>
-          <option value=trending>Trending</option>
-          <option value=food>Food</option>
-          <option value=nightlife>Nightlife</option>          
-          <option value=events>Events</option>
-          <option value=fun>Fun</option>
-        </select>
+    <select required id="categories" name="categories" class="btn btn-primary" onchange={{action 'setSelection' value="target.value"}}>
+      <option value=none>Categories</option>          
+      <option value=top-picks>Recommended:Highest Rating</option>
+      <option value=food>Food</option>
+      <option value=nightlife>Nightlife</option>          
+      <option value=events>Events</option>
+      <option value=arts>Arts and Entertainment</option>
+      <option value=outdoors>Outdoors and Recreation</option>
+    </select>
         
-<div class="form-group">
-  <label for="location">Location</label>
-  {{input required id="location" value=location class="form-control" type="text" placeholder="Choose a Location"}}
+    <div class="form-group">
+      {{input required id="location" value=location class="form-control" type="text" placeholder="Choose a Location"}}
+    </div>
+    <div class="form-group">  
+      <button type="button" id="search" class="btn btn-primary" {{action 'submit'}}>Search</button>
+    </div>
+  </form>
 </div>
-<div class="form-group">  
-  <button type="button" id="search" class="btn btn-primary" {{action 'submit'}}>Search</button>
 
-</div>
-</form>
 
-<div class="btn-group">
-  <button type="button" class="btn btn-primary">Food</button>
-  <button type="button" class="btn btn-primary">Coffee</button>
-  <button type="button" class="btn btn-primary">Nightlife</button>
-</div>
-<div class="btn-group">
-<button type="button" class="btn btn-primary">Fun</button>
-<button type="button" class="btn btn-primary">Shopping</button>
-<button type="button" class="btn btn-primary">Breakfast</button>
-</div>
-</div>
+
+
