@@ -11,11 +11,15 @@ export default Ember.Route.extend({
       console.log(url);
       return Ember.$.getJSON(url).then(function(responseJSON) {
     	console.log(responseJSON);
-      return responseJSON.response.venue;
+      // console.log(responseJSON.response.venue.tips.groups[0].items);
+      var allVenues= responseJSON.response.venue;
+      var allReviews=responseJSON.response.venue.tips.groups[0].items;
+      var allData = {allVenues,allReviews};
+      console.log(allReviews);
+      return allData;
+     
+
     });
   },
-  allReviews: Ember.computed('model.tips.groups[0].items', function(){
-  
-    return model.tips.groups[0].items + console.log(allReviews);;
-  })
+
 });

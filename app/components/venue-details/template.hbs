@@ -3,11 +3,11 @@
     <div class="flex-item">
       <div class="venueInfo">
         <img src="https://lh3.googleusercontent.com/-LvroGvBAXVA/WWPkQxrzvCI/AAAAAAABhv0/vpiQYmET1c8G9Loh9MFMid19kPUEFHF4gCLIBGAYYCw/w180-h180-n-k-no/" class="img-rounded" alt="Pete's Cafe and Burrito Haven">
-        <span class="label venueScore">{{model.rating}}</span>
-        <span class="label venueCost">{{model.price.currency}}</span>
+        <span class="label venueScore">{{model.allVenues.rating}}</span>
+        <span class="label venueCost">{{model.allVenues.price.currency}}</span>
         <div class="restaurantDetails">
-          <h3 class="restaurantName">{{model.name}}</h3>
-          <p class="restaurantDescription">{{model.location.address}},{{model.location.country}}</p>
+          <h3 class="restaurantName">{{model.allVenues.name}}</h3>
+          <p class="restaurantDescription">{{model.location.address}},{{model.allVenues.location.country}}</p>
           <p>{{model.url}}</p>
         </div>
       </div>
@@ -24,8 +24,8 @@
           </ul>
         </div>
       <div class="reviewSection">
-        {{#each allReviews as |review|}}
-          {{review-details review=model}}
+        {{#each model.allReviews as |review|}}
+          {{review-details review=review}}
         {{/each}}
     </div>
   </div>

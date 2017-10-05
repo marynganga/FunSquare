@@ -199,7 +199,7 @@ button .actionSave {}
 }
 
 .reviewSection {
-  display: inline-block;
+  display: block;
   width: 100%;
   border-style: outset #ddd;
   border-radius: 5px;
@@ -211,7 +211,8 @@ button .actionSave {}
 
 .reviewDetails {
   width: 100%;
-  float: none;
+  border: 2px solid #ddd;
+  
 }
 
 .imageAuthor {
