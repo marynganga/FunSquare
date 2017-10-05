@@ -512,7 +512,6 @@ input[type=checkbox].add-to-calendar-checkbox {
   background-position: -52px 0;
 }
 
-/*img {
-  height: 640px;
-  width: 640px;
-}*/
+#venue-map {
+  text-align: center;
+}

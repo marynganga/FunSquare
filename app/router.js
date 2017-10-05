@@ -15,6 +15,7 @@ Router.map(function() {
   this.route('outdoors',{path:'outdoors/:params.location'});
   this.route('arts',{path:'arts/:params.location'});
   this.route('view-venue',{path:'view-venue/:params.id'});
+  this.route('google-calendar');
 });
 
 export default Router;
