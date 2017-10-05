@@ -23,4 +23,7 @@ bower.json.ember-try
 package.json.ember-try
 
 .env
+<<<<<<< HEAD
+=======
 package-lock.json
+>>>>>>> f211de7bb7afc42363ed329df3c59e517ab73ce6
