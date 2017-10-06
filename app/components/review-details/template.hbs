@@ -1,14 +1,21 @@
 <div class="reviewDetails">
 
-  <div class="author">
-    <h3>{{review.user.firstName}}</h3>
+
+  <div class="author" style=" margin-left: 10px;">
+    <h4>{{reviw.user.photoprefixsuffix}} {{review.user.firstName}} {{review.user.lastName}}</h4>
   </div>
 
-  <div class="reviewDate">
-    <h3>{{review.createdAt}}</h3>
+  <div class="reviewDate" style="float: right;">
+    <p>{{moment-format review.createdAt 'MMM Do, YYYY'}}</p>
   </div>
-  <div class="reviewDescription">
-    <h3>{{review.text}}</h3>
+
+  <div class="reviewDescription" style="font-size: 15px; margin-left: 20px;">
+    <p>{{review.text}}</p>
+  </div>
+
+  <div class="reviewRateSection" style="font-size: 14px; margin-bottom: 10px; margin-left: 10px;" >
+    <span class="upvoteReview"><i class="fa fa-heart-o fa-2x fa-fw" aria-hidden="true" style="font-size: 14px;"></i>Upvote</span>
+    <span class="downvoteReview"><i class="fa fa-thumbs-down fa-2x fa-fw" aria-hidden="true" style="font-size: 14px; margin-left: 10px;"></i>Downvote</span>
   </div>
 
 </div>

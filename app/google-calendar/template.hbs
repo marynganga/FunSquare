@@ -1,43 +1,33 @@
 <html>
   <head>
     <script src="ouical.js"></script>
-    <script src="ouical.min.js"></script>
+    <script src="ouical.min.js"> </script>
     <link rel="stylesheet" href="main.css">
     <title></title>
   </head>
 
   <body>
-    <div class="new-calendar"></div>
-  <script>
+    <div class="new-cal"></div>
+
+  <!-- <script>
       var myCalendar = createCalendar({
         options: {
           class: 'my-class',
           id: 'my-id'                               // You need to pass an ID. If you don't, one will be generated for you.
         },
         data: {
-          title: 'Add an event in Fun Square',     // Event title
-          start: new Date('October 9, 2017 7:00'),   // Event start date
+          title: '',     // Event title
+          start: new Date(''),   // Event start date
           duration: 120,                            // Event duration (IN MINUTES)
-          end: new Date('October 15, 2017 20:00'),     // You can also choose to set an end time.
+          end: new Date(''),     // You can also choose to set an end time.
                                                     // If an end time is set, this will take precedence over duration
           address: 'The Fun Square',
           description: 'Add an event in Fun Square, then prepare for world domination.'
         }
       }),
-      myCalendar2 = createCalendar({
-        options: {
-          class: 'my-class'                         // Notice how this one does not have a preset ID
-        },
-        data: {
-          title: 'Go to the gym',
-          start: new Date('October 19, 2013 17:00'),
-          duration: 60,
-          address: 'Tough Boys Gym',
-          description: 'Work them biceps out.'
-        }
-      });
 
-      document.querySelector('.new-calendar').appendChild(myCalendar);
-  </script>
+      document.querySelector('.new-cal').appendChild(myCalendar);
+
+  </script> -->
   </body>
 </html>
