@@ -1,4 +1,8 @@
 <div class="reviewDetails">
+  <div class="venueRateSection">
+    <span class="venueUpvote"><i class="fa fa-heart-o fa-2x fa-fw" aria-hidden="true"></i>{{review.agreeCount}}</span>
+    <span class="venueDownvote"><i class="fa fa-thumbs-down fa-2x fa-fw" aria-hidden="true"></i>{{review.disagreeCount}}</span>
+  </div>
 
   <div class="author">
     <h3>{{review.user.firstName}}</h3>
@@ -7,6 +11,7 @@
   <div class="reviewDate">
     <h3>{{review.createdAt}}</h3>
   </div>
+  
   <div class="reviewDescription">
     <h3>{{review.text}}</h3>
   </div>
