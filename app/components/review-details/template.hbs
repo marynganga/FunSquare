@@ -4,16 +4,17 @@
     <span class="venueDownvote"><i class="fa fa-thumbs-down fa-2x fa-fw" aria-hidden="true"></i>{{review.disagreeCount}}</span>
   </div>
 
-  <div class="author">
-    <h3>{{review.user.firstName}}</h3>
+    <div class="authorSection">
+      <p class="author">{{review.user.firstName}}</p>
+      <span class=commentIcon><i class="fa fa-commenting-o " aria-hidden="true"></i></span>
   </div>
-
-  <div class="reviewDate">
-    <h3>{{review.createdAt}}</h3>
+  
+  <div class="reviewDateSection">
+    <span class="dateIcon"><i class="fa fa-tint" aria-hidden="true"></i></span>
+    <p class="reviewDate">{{review.createdAt}}</p>
   </div>
   
   <div class="reviewDescription">
-    <h3>{{review.text}}</h3>
+    <p>{{review.text}}</p>
   </div>
-
 </div>

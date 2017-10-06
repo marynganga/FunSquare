@@ -1,48 +1,33 @@
-<div class="row">
-  <div class="col-md-6">
-
-    <div class="venueInfoSection">
-      <div class="flex-container">
-        <div class="flex-item">
-          <div class="venueInfo">
-            <img src="{{model.venueCategoryIcon}}" class="img-rounded" alt="{{model.allVenues.name}}">
-            <span class="label venueScore">{{model.allVenues.rating}}</span>
-            <span class="label venueCost">{{model.allVenues.price.currency}}</span>
-            <div class="restaurantDetails">
-              <h3>{{model.allVenues.name}}</h3>
-              <p>{{model.allVenues.location.address}} {{model.allVenues.location.country}}</p>
-              <p>{{model.allVenues.url}}</p>
-              <span class="label venueContact">{{result.allVenues.contact.formattedPhone}}</span>
-             
-
-              <a href="https://calendar.google.com/calendar/render?#main" target="_blank">Add event to Google Calendar</a>
-        
-          </div>
+<div class="venueInfoSection">
+  <div class="flex-container">
+    <div class="flex-item">
+      <div class="venueInfo">
+        <img src="{{model.venueCategoryIcon}}" class="img-rounded" alt="{{model.allVenues.name}}">
+        <span class="label venueScore">{{model.allVenues.rating}}</span>
+        <span class="label venueCost">{{model.allVenues.price.currency}}</span>
+        <div class="restaurantDetails">
+          <h3>{{model.allVenues.name}}</h3>
+          <p>{{model.allVenues.location.address}} {{model.allVenues.location.country}}</p>
+          <p>{{model.allVenues.url}}</p>
+          <span class="label venueContact">{{result.allVenues.contact.formattedPhone}}</span>
         </div>
-          <div class="venueActionSection">
-            <button class="tipsbtn" type="button" name="button">Tips and Reviews</button>
-          </div>
-          <div class="venueReviews">
-              <ul class="nav nav-tabs">
-                <li class="active"><a href="#">All Reviews</a></li>
-              </ul>
-            </div>
+      </div>
+      <div class="venueActionSection">
+          <span class="label tipsbtn">Tips and Reviews</span>
+          <button class="eventsbtn" type="button" name="button"><a href="https://calendar.google.com/calendar/render?#main" target="_blank">Add event to Google Calendar</a></button>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
           <div class="reviewSection">
             {{#each model.allReviews as |review|}}
               {{review-details review=review}}
             {{/each}}
+          </div>
+        </div>
+        <div class="col-md-5" id="venue-map">
+          <img src="https://maps.googleapis.com/maps/api/staticmap?'+{{model.allVenues.location.address}}+'&zoom=16&size=640x640&sensor=true&maptype=roadmap&markers=color:red|{{model.allVenues.location.lat}},{{model.allVenues.location.lng}}&key=AIzaSyAPbT83XDa5Inel4sYxFhGENS4FyUMuZSk"/>
         </div>
       </div>
     </div>
-    </div>
-
   </div>
-
-  <div class="col-md-6" id="venue-map">
-
-    <!-- <img
-    src="https://maps.googleapis.com/maps/api/staticmap?center='+{{model.allVenues.location.address}}+'&zoom=13&size=640x700&maptype=roadmap&markers=color:blue%7Clabel:S%7C'+{{model.allVenues.location.lat}}+','+{{model.allVenues.location.lng}}+'&key=AIzaSyAPbT83XDa5Inel4sYxFhGENS4FyUMuZSk"/>  -->
-    <img src="https://maps.googleapis.com/maps/api/staticmap?'+{{model.allVenues.location.address}}+'&zoom=16&size=640x640&sensor=true&maptype=roadmap&markers=color:red|{{model.allVenues.location.lat}},{{model.allVenues.location.lng}}&key=AIzaSyAPbT83XDa5Inel4sYxFhGENS4FyUMuZSk"/>
-  </div>
-
-  </div>
+</div>
