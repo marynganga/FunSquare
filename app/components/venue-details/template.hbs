@@ -4,7 +4,7 @@
       <div class="flex-container">
         <div class="flex-item">
           <div class="venueInfo">
-            <img src="https://lh3.googleusercontent.com/-LvroGvBAXVA/WWPkQxrzvCI/AAAAAAABhv0/vpiQYmET1c8G9Loh9MFMid19kPUEFHF4gCLIBGAYYCw/w180-h180-n-k-no/" class="img-rounded" alt="Pete's Cafe and Burrito Haven">
+            <p> {{model.allVenues.icon}}</p>
             <span class="label venueScore">{{model.allVenues.rating}}</span>
             <span class="label venueCost">{{model.allVenues.price.currency}}</span>
             <div class="restaurantDetails">
@@ -62,10 +62,25 @@
 
 
     <div class="details" style="text-align: left;">
-      <p>{{model.allVenues.name}}</p>
-      <p>{{model.allVenues.location.address}}, {{model.allVenues.location.country}}</p>
-      <p>{{model.allVenuescontact.phone}}</p>
-      <a href="{{model.allVenues.url}}"> {{model.allVenues.url}} </a>
+
+      <hr>
+
+      <span class="glyphicon glyphicon-fire"></span> {{model.allVenues.name}} <br>
+      <p> <{{model.allVenues.location.address}}, {{model.allVenues.location.country}} </p>
+
+      <hr>
+
+      <span class="glyphicon glyphicon-time"> </span> {{model.allVenues.popular.status}} <br>
+
+       <hr>
+
+      <span class="glyphicon glyphicon-phone"> </span> {{model.allVenues.contact.phone}}  <br>
+
+      <hr>
+
+      <span class="glyphicon glyphicon-globe"></span> <a href="{{model.allVenues.url}}"> {{model.allVenues.url}} </a>
+
+
     </div>
 
   </div>
