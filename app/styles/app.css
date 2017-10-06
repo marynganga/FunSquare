@@ -81,11 +81,18 @@
     margin-top: 5%;
     /*padding-left: 25%;*/
     padding: 15px;
+    margin-left: 17%;
+    margin-right: 12.5%;
+    /*background-color: blue;*/
+  }
+.searchForm2 {
+    margin-top: 5%;
+    /*padding-left: 25%;*/
+    padding: 15px;
     margin-left: 12%;
     margin-right: 12.5%;
     /*background-color: blue;*/
   }
-
   .searchSection {
     margin-left: 5.5%;
     opacity: 1.0;
