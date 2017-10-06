@@ -1,38 +1,37 @@
-<div class="flex-container">
-  <div class="flex-item">
-    <div class="venueInfoSection">
+<div class="venueInfoSection">
+  <div class="flex-container">
+    <div class="flex-item">
       <div class="venueInfo">
-        <img src="https://lh3.googleusercontent.com/-LvroGvBAXVA/WWPkQxrzvCI/AAAAAAABhv0/vpiQYmET1c8G9Loh9MFMid19kPUEFHF4gCLIBGAYYCw/w180-h180-n-k-no/" class="img-rounded">
+        <img src="{{model.venueCategoryIcon}}" class="img-rounded" alt="{{model.allVenues.name}}">
         <span class="label venueScore">{{model.allVenues.rating}}</span>
+        <span class="label venueCost">{{model.allVenues.price.currency}}</span>
         <div class="restaurantDetails">
-          <span class="label venueCost">{{model.allVenues.price.currency}}</span>
-          <h3 class="restaurantName">{{model.allVenues.name}}</h3>
-          <p class="restaurantDescription">{{model.location.address}}{{model.allVenues.location.country}}</p>
-          <p>{{model.url}}</p>
+          <h3>{{model.allVenues.name}}</h3>
+          <p>{{model.allVenues.location.address}} {{model.allVenues.location.country}}</p>
+          <p>{{model.allVenues.url}}</p>
+          <span class="label venueContact">{{result.allVenues.contact.formattedPhone}}</span>
         </div>
       </div>
       <div class="venueActionSection">
-        <span class="label tipsbtn">Tips and Reviews</span>
-        <!-- <button class="tipsbtn" tipsbtntype="button" name="button"></button> -->
-        <button class="eventsbtn" type="button" name="button">{{#link-to 'google-calendar' component}}Create Event{{/link-to}}</button>
-        <!-- <div class="venueRateSection">
-          <span class="venueUpvote"><i class="fa fa-heart-o fa-2x fa-fw" aria-hidden="true"></i>Upvote</span>
-          <span class="venueDownvote"><i class="fa fa-thumbs-down fa-2x fa-fw" aria-hidden="true"></i>Downvote</span>
-        </div> -->
+          <span class="label tipsbtn">Tips and Reviews</span>
+          <button class="eventsbtn label" type="button" name="button"><a href="https://calendar.google.com/calendar/render?#main" target="_blank">Add event to Google Calendar</a></button>
       </div>
-      <!-- <div class="venueReviews">
-        <ul class="nav nav-tabs">
-          <li class="active"><a href="#">All Reviews</a></li>
-        </ul>
-      </div> -->
-      <div class="reviewSection">
-        {{#each model.allReviews as |review|}}
-          {{review-details review=review}}
-        {{/each}}
+<!--       <div class="row">
+        <div class="col-md-7"> -->
+        <div class="anyDiv">
+          <div class="reviewSection">
+            {{#each model.allReviews as |review|}}
+              {{review-details review=review}}
+            {{/each}}
+            </div>
+            <div class="mapSection" id="venue-map">
+          <img src="https://maps.googleapis.com/maps/api/staticmap?'+{{model.allVenues.location.address}}+'&zoom=16&size=500x700&sensor=true&maptype=roadmap&markers=color:red|{{model.allVenues.location.lat}},{{model.allVenues.location.lng}}&key=AIzaSyAPbT83XDa5Inel4sYxFhGENS4FyUMuZSk"/>
+        </div>
       </div>
-      <div class="showEvent">
-
-      </div>
+          
+<!--         </div>
+        class="col-md-5"
+      </div -->>
     </div>
   </div>
 </div>

@@ -4,6 +4,7 @@ import config from '../config/environment';
 
 export default Ember.Route.extend({
 
+
   model: function(params) {
     var CLIENT_ID = config.myCLIENT_ID;
     var CLIENT_SECRET = config.myCLIENT_SECRET;
@@ -14,12 +15,14 @@ export default Ember.Route.extend({
       console.log(responseJSON);
       // console.log(responseJSON.response.venue.tips.groups[0].items);
       var allVenues = responseJSON.response.venue;
+      var venueCategoryIcon = responseJSON.response.venue.photos.groups[0].items[1].prefix+'200x200'+responseJSON.response.venue.photos.groups[0].items[1].suffix;
       var allReviews = responseJSON.response.venue.tips.groups[0].items;
       var allData = {
         allVenues,
-        allReviews
+        allReviews,
+        venueCategoryIcon
       };
-      console.log(allReviews);
+      console.log(allReviews,venueCategoryIcon);
       return allData;
     });
   },
