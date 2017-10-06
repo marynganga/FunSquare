@@ -4,19 +4,14 @@
     <div class="flex-container">
       <div class="flex-item">
         <div class="venueInfo">
-          <img src="https://lh3.googleusercontent.com/-LvroGvBAXVA/WWPkQxrzvCI/AAAAAAABhv0/vpiQYmET1c8G9Loh9MFMid19kPUEFHF4gCLIBGAYYCw/w180-h180-n-k-no/" class="img-rounded" alt="Pete's Cafe and Burrito Haven">
-          <span class="label venueScore">rating<br/>{{result.venue.rating}}</span>
+        <!--   <img src="{{result.venue.bestPhoto.prefix}}+'/300*300/'+{{result.venue.bestPhoto.suffix}}" class="img-rounded" alt="{{result.venue.name}}"> -->
           <div class="restaurantDetails">
-            {{#link-to 'view-venue' result.venue.id}}<h4 {{action 'sendId' result.venue.id}} class="restaurantName">{{result.venue.name}}</h4>{{/link-to}}
-            <p class="label venueCost">{{result.venue.price.currency}}</p>
-            
-
-
-            <h4 class="restaurantDescription">{{result.venue.description}}</h4>
-            <p>{{result.venue.url}}</p>
-            <span class="label venueContact">{{result.venue.contact.phone}}</span>
-            <!-- <a class="button"><i class="fa fa-bookmark-o fa-2x" aria-hidden="true">Save</i></a> -->
-            <button class="actionSave" type="button" name="button"><i class="fa fa-bookmark-o fa-2x fa-fw"  aria-hidden="true"></i>Save</button>
+            {{#link-to 'view-venue' result.venue.id}}<h4 {{action 'sendId' result.venue.id}}>{{result.venue.name}} <span class="label venueCost">{{result.venue.price.currency}}</span></h4> {{/link-to}}
+             <p>{{result.venue.location.address}} {{result.venue.location.country}}</p>
+      
+            <span class="label venueContact">{{result.venue.contact.formattedPhone}}</span> <a href="{{result.venue.url}}">{{result.venue.url}}</a><br />
+          <p class="label venueScore">rating {{result.venue.rating}}</p>
+        
           </div>
         </div>
       </div>

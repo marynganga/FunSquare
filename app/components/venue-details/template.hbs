@@ -5,26 +5,22 @@
       <div class="flex-container">
         <div class="flex-item">
           <div class="venueInfo">
-            <img src="https://lh3.googleusercontent.com/-LvroGvBAXVA/WWPkQxrzvCI/AAAAAAABhv0/vpiQYmET1c8G9Loh9MFMid19kPUEFHF4gCLIBGAYYCw/w180-h180-n-k-no/" class="img-rounded" alt="Pete's Cafe and Burrito Haven">
+            <img src="{{model.venueCategoryIcon}}" class="img-rounded" alt="{{model.allVenues.name}}">
             <span class="label venueScore">{{model.allVenues.rating}}</span>
             <span class="label venueCost">{{model.allVenues.price.currency}}</span>
             <div class="restaurantDetails">
-              <h3 class="restaurantName">{{model.allVenues.name}}</h3>
-              <p class="restaurantDescription">{{model.allVenues.location.address}},{{model.allVenues.location.country}}</p>
-              <p>{{model.url}}</p>
-              <span class="label venueContact">{{result.venue.contact.phone}}</span>
+              <h3>{{model.allVenues.name}}</h3>
+              <p>{{model.allVenues.location.address}} {{model.allVenues.location.country}}</p>
+              <p>{{model.allVenues.url}}</p>
+              <span class="label venueContact">{{result.allVenues.contact.formattedPhone}}</span>
+             
 
-
-            {{#link-to 'google-calendar'}} Add Event {{/link-to}}
-
-            </div>
+              <a href="https://calendar.google.com/calendar/render?#main" target="_blank">Add event to Google Calendar</a>
+        
           </div>
+        </div>
           <div class="venueActionSection">
             <button class="tipsbtn" type="button" name="button">Tips and Reviews</button>
-            <div class="venueRateSection">
-              <span class="venueUpvote"><i class="fa fa-heart-o fa-2x fa-fw" aria-hidden="true"></i>Upvote</span>
-              <span class="venueDownvote"><i class="fa fa-thumbs-down fa-2x fa-fw" aria-hidden="true"></i>Downvote</span>
-            </div>
           </div>
           <div class="venueReviews">
               <ul class="nav nav-tabs">
