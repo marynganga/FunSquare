@@ -1,3 +1,27 @@
+#locationInput {
+  font-size: 20px;
+}
+
+.about {
+  background-image: url("/images/fun8.jpg");
+  background-size: cover;
+}
+
+.well {
+  text-align: center;
+  border-radius: ;
+  border: ;
+  box-shadow: ;
+  display: block;
+  margin: auto;
+  width: 30%;
+  height: 100%;
+  font-family: 'Germania One', cursive;
+  font-size: 23px;
+  background-color: #a3a3c2;
+  color: #330033;
+}
+
 .cont {
     background-image: url('/images/background2-2compressed.jpeg');
     background: cover;
@@ -9,6 +33,10 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    font-family: 'Germania One', cursive;
+  font-size: 25px;
+  overflow-x: visible;
+  width: auto;
 }
 nav{
 
@@ -32,6 +60,8 @@ nav{
 body {
   color: #4e595d;
   background-color: #eee;
+  overflow-x: visible;
+  width: auto;
 }
 
 .header {
@@ -328,163 +358,6 @@ button .actionSave {}
   color: #C0392B;
 }
 
-
-/* }
-
-  .venueScore {
-    margin-right: 3%;
-    float: right;
-  }
-  /* Dropdown Button
-
-  .dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  /* The container <div> - needed to position the dropdown content
-
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  /* Dropdown Content (Hidden by Default) */
-
-
-/*.venueActionSection {
-    display: inline-block;
-    width: 100%;
-    border-style: outset #ddd;
-    background-color: #eee;
-    padding: 15px;
-    margin-right: -5%;
-    margin-left: -3.5%;
-    margin-bottom: /*margin-left-: -2%;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  Links inside the dropdown
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-  .venueRateSection {
-    border-radius: 0 0 3px 0;
-    background-color: #fff;
-    border-left: 0px solid #efeff4;
-    float: right;
-    height: 40px;
-    padding-bottom: 20px;
-    /*padding: 30px;
-    width: 278px;
-  }
-
-  .venueActionSection .venueUpvote {
-    margin-left: 2%;
-    margin-right: 3%;
-    cursor: pointer;
-    color: teal;
-    border-radius: 1px;
-  }
-
-  .newReviewForm {
-    display: inline-block;
-    width: 100%;
-    border-style: outset #ddd;
-    background-color: #ECF0F1;
-    padding: 15px;
-    margin-right: 5%;
-    margin-left: -3.5%;
-  }
- Change color of dropdown links on hover
-
-  .dropdown-content a:hover {
-    background-color: #f1f1f1
-  }
-  Show the dropdown menu on hover
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  Change the background color of the dropdown button when the dropdown content is shown
-
-  .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-  }
-
-  .venueReviews {
-    display: inline-block;
-    width: 100%;
-    border-style: outset #ddd;
-    background-color: #eee;
-    padding: 5px;
-    margin-right: -5%;
-    margin-left: -3.5%;
-    color: white;
-  }
-
-  .reviewSection {
-    display: inline-block;
-    width: 100%;
-    border-style: outset #ddd;
-    border-radius: 5px;
-    border: 1px solid #F2F3F4;
-    padding: 10px;
-    margin-right: -5%;
-    margin-left: -3.5%;
-  }
-
-  .reviewDetails {
-    width: 100%;
-    float: none;
-  }
-
-  .imageAuthor {
-    margin-right: 2%;
-    float: left;
-  }
-
-  .author {
-    float: none;
-  }
-*/
-
-
-/*  .reviewDate {
-    float: right;
-    margin-right: 5%;
-    margin-top: -3.5%;
-  }
-
-  .reviewActionSection {
-    margin-top: 3%;
-  }
-
-  .reviewupvote {
-    margin-right: 3%;
-    cursor: pointer;
-    color: teal;
-  }
-
-  .reviewDownvote {
-    cursor: pointer;
-    color: #C0392B;
-  }
-
-*/
 
 
 /*google calendar css*/
