@@ -1,17 +1,15 @@
 {
-  "name": "fun-trial",
+  "name": "funsquare",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for fun-trial goes here",
+  "description": "Small description for funsquare goes here",
   "license": "MIT",
   "author": "",
   "directories": {
+    "doc": "doc",
     "test": "tests"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rickmutua/fun-trial.git"
-  },
+  "repository": "",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
@@ -38,15 +36,9 @@
     "ember-resolver": "^4.0.0",
     "ember-source": "~2.15.0",
     "ember-welcome-page": "^3.0.0",
-    "loader.js": "^4.2.3s"
+    "loader.js": "^4.2.3"
   },
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
-  },
-  "main": ".eslintrc.js",
-  "dependencies": {},
-  "bugs": {
-    "url": "https://github.com/rickmutua/fun-trial/issues"
-  },
-  "homepage": "https://github.com/rickmutua/fun-trial#readme"
+  }
 }

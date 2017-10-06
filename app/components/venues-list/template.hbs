@@ -1,22 +1,23 @@
-
-<ul>
-  {{#each model as |result|}}
-    <div class="flex-container">
-      <div class="flex-item">
-        <div class="venueInfo">
-          <img src="https://lh3.googleusercontent.com/-LvroGvBAXVA/WWPkQxrzvCI/AAAAAAABhv0/vpiQYmET1c8G9Loh9MFMid19kPUEFHF4gCLIBGAYYCw/w180-h180-n-k-no/" class="img-rounded" alt="Pete's Cafe and Burrito Haven">
-          <span class="label venueScore">{{result.venue.rating}}</span>
-          <span class="label venueCost">{{result.venue.price.tier}}</span>
-          <div class="restaurantDetails">
-            {{#link-to 'view-venue' result.venue.id}}<h4 {{action 'sendId' result.venue.id}} class="restaurantName">{{result.venue.name}}</h4>{{/link-to}}
-            
-            <h4 class="restaurantDescription">{{result.venue.description}}</h4>
-            <p>{{result.venue.url}}</p>
-            <!-- <a class="button"><i class="fa fa-bookmark-o fa-2x" aria-hidden="true">Save</i></a> -->
-            <button class="actionSave" type="button" name="button"><i class="fa fa-bookmark-o fa-2x fa-fw"  aria-hidden="true"></i>Save</button>
+<div class="venueListing">
+  <ul>
+    {{#each model as |result|}}
+      <div class="flex-container">
+        <div class="flex-item">
+          <div class="venueInfo">
+            <img src="https://lh3.googleusercontent.com/-LvroGvBAXVA/WWPkQxrzvCI/AAAAAAABhv0/vpiQYmET1c8G9Loh9MFMid19kPUEFHF4gCLIBGAYYCw/w180-h180-n-k-no/" class="img-rounded" alt="Pete's Cafe and Burrito Haven">
+            <span class="label venueScore">{{result.venue.rating}}</span>
+            <span class="label venueCost">{{result.venue.price.tier}}</span>
+            <div class="restaurantDetails">
+              {{#link-to 'view-venue' result.venue.id}}<h4 {{action 'sendId' result.venue.id}} class="restaurantName">{{result.venue.name}}</h4>{{/link-to}}
+              <h4 class="restaurantDescription">{{result.venue.description}}</h4>
+              <p>{{result.venue.url}}</p>
+              <!-- <a class="button"><i class="fa fa-bookmark-o fa-2x" aria-hidden="true">Save</i></a> -->
+              <button class="actionSave" type="button" name="button"><i class="fa fa-bookmark-o fa-2x fa-fw"  aria-hidden="true"></i>Save</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  {{/each}}
-</ul>
+    {{/each}}
+  </ul>
+
+</div>
