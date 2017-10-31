@@ -46,7 +46,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.myCLIENT_ID = process.env.CLIENT_ID;
+    ENV.myCLIENT_SECRET = process.env.CLIENT_SECRET;
   }
 
   return ENV;
