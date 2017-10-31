@@ -13,7 +13,7 @@ Funsquare helps you find the perfect places to go with friends, discover the bes
 * Users can click a recommended venue to see more inforamtion about it.
 * Each venue info displays reviews by previous visitors and a google map with the venues location. 
 
-### Built by [Mary Ng'ang'a](https://github.com/marynganga), [Virginia Ndung'u](https://github.com/VirginiaNdungu1), [Angela Gathu](https://github.com/agathu87) and [Erick Mutua](https://github.com/rickmutua)
+## Built by [Mary Ng'ang'a](https://github.com/marynganga), [Virginia Ndung'u](https://github.com/VirginiaNdungu1), [Angela Gathu](https://github.com/agathu87) and [Erick Mutua](https://github.com/rickmutua)
   
 ## Technologies Used
 
