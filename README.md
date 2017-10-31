@@ -74,11 +74,11 @@ You will need the following things properly installed on your computer.
       
       * $ firebase deploy -m "<type-of-changes-made>"
       
-### Code Generators
+## Code Generators
 
 * Make use of the many generators for code, try `ember help generate` for more details.
 
-### Running Tests
+## Running Tests
 
 * `ember test`
 * `ember test --server`
