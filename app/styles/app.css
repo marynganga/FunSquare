@@ -666,18 +666,6 @@ input[type=checkbox].add-to-calendar-checkbox {
   display: block;
 }
 
-
-/* .venueRateSection {
-    border-radius: 0 0 3px 0;
-    background-color: #fff;
-    border-left: 0px solid #efeff4;
-    float: right;
-    height: 40px;
-    padding-bottom: 20px;
-    padding: 30px;
-    width: 278px;
-  }*/
-
 .newReviewForm {
   display: inline-block;
   width: 100%;
@@ -761,12 +749,6 @@ input[type=checkbox].add-to-calendar-checkbox {
   overflow: hidden;
   color: #3E7BA3;
 }
-
-
-/*.reviewDetails {
-    width: 100%;
-    border: 2px solid #ddd;
-  }*/
 
 .imageAuthor {
   margin-right: 2%;
