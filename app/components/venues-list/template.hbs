@@ -9,13 +9,12 @@
             <div class="restaurantDetails">
               {{#link-to 'view-venue' result.venue.id}}<h4 {{action 'sendId' result.venue.id}}>{{result.venue.name}} <span class="label venueCost">{{result.venue.price.currency}}</span></h4> {{/link-to}}
                <p>{{result.venue.location.address}} {{result.venue.location.country}}</p>
-        
-              <span class="label venueContact">{{result.venue.contact.formattedPhone}}</span> <a href="{{result.venue.url}}">{{result.venue.url}}</a><br />
+                    <span class="label venueContact">{{result.venue.contact.formattedPhone}}</span> <a href="{{result.venue.url}}">{{result.venue.url}}</a><br />
               <p class="label venueScore">rating {{result.venue.rating}}</p>
-            </div> 
+            </div>
           </div>
         </div>
-      </div>      
+      </div>
     {{/each}}
   </ul>
 </div>

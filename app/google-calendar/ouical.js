@@ -1,4 +1,4 @@
-;(function(exports) {
+(function(exports) {
   var MS_IN_MINUTES = 60 * 1000;
 
   var formatTime = function(date) {
@@ -32,7 +32,7 @@
 
     yahoo: function(event) {
       var eventDuration = event.end ?
-        ((event.end.getTime() - event.start.getTime())/ MS_IN_MINUTES) :
+        ((event.end.getTime() - event.start.getTime()) / MS_IN_MINUTES) :
         event.duration;
 
       // Yahoo dates are crazy, we need to convert the duration from minutes to hh:mm
@@ -48,7 +48,7 @@
 
       // Remove timezone from event time
       var st = formatTime(new Date(event.start - (event.start.getTimezoneOffset() *
-                                                  MS_IN_MINUTES))) || '';
+        MS_IN_MINUTES))) || '';
 
       var href = encodeURI([
         'http://calendar.yahoo.com/?v=60&view=d&type=20',
@@ -79,7 +79,8 @@
           'DESCRIPTION:' + (event.description || ''),
           'LOCATION:' + (event.address || ''),
           'END:VEVENT',
-          'END:VCALENDAR'].join('\n'));
+          'END:VCALENDAR'
+        ].join('\n'));
 
       return '<a class="' + eClass + '" target="_blank" href="' +
         href + '">' + calendarName + ' Calendar</a>';
@@ -161,12 +162,11 @@
 
   exports.createCalendar = function(params) {
     if (!validParams(params)) {
-      console.log('Event details missing.');
-      return;
+      return ('Event details missing.');
     }
 
     return generateMarkup(generateCalendars(params.data),
-                          getClass(params),
-                          getOrGenerateCalendarId(params));
+      getClass(params),
+      getOrGenerateCalendarId(params));
   };
 })(this);

@@ -66,6 +66,7 @@ select {
 #searchVenue {
   float: left;
   margin-left: 1.5%;
+  margin-right: -20.5%;
 }
 
 #searchVenue button {
@@ -94,19 +95,23 @@ select {
 }
 
 .searchSection {
-  margin-left: 5.5%;
+  margin-left: 6.5%;
   opacity: 1.0;
   filter: alpha(opacity=100);
-  margin-right: 4%;
-  background-image: url('/images/511061458.jpg');
+  margin-right: 5%;
+  background-image: url(/images/511061458.jpg);
   background: cover;
   background-repeat: no-repeat;
   background-color: #445063;
   background-position: center;
   background-size: 100%;
-  width: 92%;
+  width: 89.5%;
   height: 200px;
   overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 1em 1em 1em 1em #ddd;
+  display: -webkit-flex;
+  display: flex;
 }
 
 .flex-container {
@@ -155,6 +160,10 @@ select {
 .restaurantDescription {
   margin-bottom: 10%;
   /*padding: 10px;*/
+}
+
+.venueContact {
+  margin-bottom: 3.5%;
 }
 
 button {
@@ -317,13 +326,14 @@ button .actionSave {}
 
 .venueActionSection {
   display: inline-block;
-  width: 100%;
+  width: 80%;
   border-style: outset #ddd;
   background-color: #eee;
-  padding: 15px;
+  padding: 10px;
   margin-right: -5%;
   margin-left: -3.5%;
-  margin-bottom: /*margin-left-: -2%;*/
+  margin-bottom: 2%;
+  margin-top: 2%;
 }
 
 .dropdown-content {
